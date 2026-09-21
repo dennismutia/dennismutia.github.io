@@ -11,7 +11,7 @@
 
 > **Live Website**: [https://dennismutia.github.io/](https://dennismutia.github.io/)
 
-Results-driven data professional with close to 10 years of experience in data platform deployments, data engineering, analytics engineering and business intelligence. Skilled in enterprise data modeling, data warehouse design, orchestration, monitoring and alerting.
+Experienced data professional with close to 10 years of experience in data platform deployments, data engineering, analytics engineering and business intelligence. Skilled in enterprise data modeling, data warehouse design, orchestration, monitoring and alerting.
 
 ---
 
@@ -30,9 +30,9 @@ Results-driven data professional with close to 10 years of experience in data pl
 
 ### **Business Intelligence Developer** | Greenpeace International — Netherlands (Remote)
 *July 2024 – September 2026*
-- Led federated enterprise data modeling across 26 global offices, standardizing 65% of metrics via the **dbt semantic layer**.
+- Led federated enterprise data modeling across global offices, standardizing metrics via the **dbt semantic layer**.
 - Built scalable **BigQuery** pipelines (Apache Spark, Fivetran, Python) ingesting CRM, product, and ad data from Salesforce, HubSpot, Mixpanel, and Meta.
-- Architected an in-house Salesforce Reverse ETL solution and refactored Redshift queries, reducing ingestion and platform costs by **50%–80%**.
+- Architected an in-house Salesforce Reverse ETL solution and refactored Redshift queries, reducing ingestion and platform costs.
 - Managed platform infrastructure with **Terraform** and **GitLab CI**; delivered stakeholder BI dashboards in Looker, Tableau, and Hex.
 
 ### **Senior Data Engineer – Data Platform** | Premise Data — US (Remote)

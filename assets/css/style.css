@@ -322,14 +322,71 @@ a:hover {
   background: var(--border);
 }
 
-/* Experience List */
-.experience-list {
+/* Experience Timeline (Top to Bottom) */
+.timeline {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 28px;
 }
 
-.job-entry {
+.timeline-item {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 28px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Continuous Vertical Spine connecting milestones from top to bottom */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: -10px;
+  left: 5px;
+  width: 2px;
+  background: var(--border);
+  transition: background 0.2s ease;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+/* Timeline Node / Marker */
+.timeline-marker {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 3px var(--bg);
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+
+/* Topmost / most recent milestone indicator */
+.timeline-item:first-child .timeline-marker {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 8px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.timeline-item:hover .timeline-marker {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 8px var(--accent);
+  transform: scale(1.15);
+}
+
+.timeline-item:hover::before {
+  background: var(--accent-dim);
+}
+
+.timeline-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -340,7 +397,7 @@ a:hover {
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 6px;
 }
 
 .job-title-row {
@@ -367,9 +424,20 @@ a:hover {
 }
 
 .job-meta {
-  font-size: 12px;
+  font-size: 11.5px;
   color: var(--muted);
   white-space: nowrap;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 1px 7px;
+  border-radius: 3px;
+  line-height: 1.4;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.timeline-item:hover .job-meta {
+  border-color: var(--accent-dim);
+  color: var(--text);
 }
 
 .job-submeta {
@@ -573,6 +641,19 @@ a:hover {
   .skills-box, .item-card {
     background: none !important;
     border: 1px solid #ddd !important;
+  }
+  .timeline-item {
+    padding-left: 0 !important;
+    padding-bottom: 14px !important;
+  }
+  .timeline-item::before,
+  .timeline-marker {
+    display: none !important;
+  }
+  .job-meta {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
   }
   a {
     color: #000000 !important;
