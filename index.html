@@ -7,172 +7,229 @@
   <meta name="description" content="Personal CV and portfolio of Dennis Mutia — Data Engineering | Business Intelligence | Analytics Engineering.">
   <meta name="author" content="Dennis Mutia">
 
+  <!-- Google Font: JetBrains Mono (matches inithabits.com) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/><text y=%2268%22 x=%2250%22 text-anchor=%22middle%22 font-size=%2260%22 font-family=%22system-ui,sans-serif%22 font-weight=%22bold%22 fill=%22white%22>DM</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2334C48A%22/><text y=%2268%22 x=%2250%22 text-anchor=%22middle%22 font-size=%2260%22 font-family=%22monospace%22 font-weight=%22bold%22 fill=%22%230D1117%22>DM</text></svg>">
 </head>
 <body>
 
-  <!-- Minimal Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#about" class="site-logo">Dennis Mutia</a>
+  <!-- Topbar Statusline (inithabits.com style) -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#about" class="brand">
+        <span>dennis.mutia</span><span class="cursor"></span>
+      </a>
 
-      <div class="nav-group">
-        <ul class="nav-links">
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#certifications" class="nav-link">Certifications</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+      <nav class="topnav">
+        <a href="#experience">[experience]</a>
+        <a href="#skills">[skills]</a>
+        <a href="#education">[education]</a>
+        <a href="#certifications">[certifications]</a>
+        <a href="#contact">[contact]</a>
+      </nav>
 
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme" title="Toggle dark/light mode">
-          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-      </div>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+        <span class="moon-icon">☾ dark</span>
+        <span class="sun-icon">☼ light</span>
+      </button>
     </div>
   </header>
 
   <main class="container">
     <!-- Intro / Bio -->
     <section class="intro-section" id="about">
+      <div class="terminal-prompt">
+        <span class="prompt-path">~/dennismutia</span>
+        <span class="prompt-branch">git:(main)</span>
+        <span class="prompt-dollar">$</span>
+        <span>cat profile.txt</span>
+      </div>
+
       <h1 class="intro-name">Dennis Mutia</h1>
-      <p class="intro-role">Data Engineering | Business Intelligence | Analytics Engineering</p>
+      <p class="intro-role">
+        <span class="role-symbol">&gt;</span> Data Engineering | Business Intelligence | Analytics Engineering
+      </p>
 
       <p class="intro-bio">
         Results-driven data professional with close to 10 years of experience in data platform deployments, data engineering, analytics engineering, and business intelligence. Skilled in enterprise data modeling, data warehouse design, orchestration, monitoring, and alerting across distributed environments.
       </p>
 
       <div class="contact-links">
-        <a href="mailto:dennis.mutia@gmail.com" class="contact-pill">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Email -->
+        <a href="mailto:dennis.mutia@gmail.com" class="btn btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
           <span>dennis.mutia@gmail.com</span>
         </a>
 
-        <a href="https://github.com/dennismutia" target="_blank" rel="noopener noreferrer" class="contact-pill">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        <!-- Medium (next to email) -->
+        <a href="https://medium.com/@dennis.mutia" target="_blank" rel="noopener noreferrer" class="btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
           </svg>
-          <span>GitHub</span>
+          <span>medium.com/@dennis.mutia</span>
         </a>
 
-        <button type="button" class="contact-pill btn-print action-print-cv">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- GitHub -->
+        <a href="https://github.com/dennismutia" target="_blank" rel="noopener noreferrer" class="btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span>github.com/dennismutia</span>
+        </a>
+
+        <!-- Print / PDF -->
+        <button type="button" class="btn btn-print action-print-cv">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="6 9 6 2 18 2 18 9"></polyline>
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
             <rect x="6" y="14" width="12" height="8"></rect>
           </svg>
-          <span>Print / PDF</span>
+          <span>print_cv</span>
         </button>
       </div>
     </section>
 
     <!-- Experience -->
     <section class="section" id="experience">
-      <h2 class="section-title">Experience</h2>
+      <div class="section-head">
+        <span class="prefix">/*</span>
+        <span>01. experience</span>
+        <span class="line"></span>
+        <span class="prefix">*/</span>
+      </div>
 
       <div class="experience-list">
         <!-- Greenpeace International -->
         <article class="job-entry">
           <div class="job-header">
-            <div>
-              <span class="job-title">Business Intelligence Developer</span>
-              <span>—</span>
+            <div class="job-title-row">
               <span class="job-company">Greenpeace International</span>
+              <span class="job-sep">//</span>
+              <span class="job-role">Business Intelligence Developer</span>
             </div>
             <div class="job-meta">July 2024 – September 2026</div>
           </div>
           <div class="job-submeta">Netherlands (Remote)</div>
           <ul class="job-bullets">
-            <li>Led federated enterprise data modeling across 26 global offices, standardizing 65% of metrics via the <strong>dbt semantic layer</strong>.</li>
-            <li>Built scalable <strong>BigQuery</strong> pipelines (Apache Spark, Fivetran, Python) ingesting CRM, product, and ad data from Salesforce, HubSpot, Mixpanel, and Meta.</li>
-            <li>Architected an in-house Salesforce Reverse ETL solution and refactored Redshift queries, reducing ingestion and platform costs by <strong>50%–80%</strong>.</li>
-            <li>Managed platform infrastructure with <strong>Terraform</strong> and <strong>GitLab CI</strong>; delivered stakeholder BI dashboards in Looker, Tableau, and Hex.</li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Led federated enterprise data modeling across 26 global offices, standardizing 65% of metrics via the <strong>dbt semantic layer</strong>.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Built scalable <strong>BigQuery</strong> pipelines (Apache Spark, Fivetran, Python) ingesting CRM, product, and ad data from Salesforce, HubSpot, Mixpanel, and Meta.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Architected an in-house Salesforce Reverse ETL solution and refactored Redshift queries, reducing ingestion and platform costs by <strong>50%–80%</strong>.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Managed platform infrastructure with <strong>Terraform</strong> and <strong>GitLab CI</strong>; delivered stakeholder BI dashboards in Looker, Tableau, and Hex.</span>
+            </li>
           </ul>
         </article>
 
         <!-- Premise Data -->
         <article class="job-entry">
           <div class="job-header">
-            <div>
-              <span class="job-title">Senior Data Engineer — Data Platform</span>
-              <span>—</span>
+            <div class="job-title-row">
               <span class="job-company">Premise Data</span>
+              <span class="job-sep">//</span>
+              <span class="job-role">Senior Data Engineer — Data Platform</span>
             </div>
             <div class="job-meta">June 2022 – June 2024</div>
           </div>
           <div class="job-submeta">United States (Remote)</div>
           <ul class="job-bullets">
-            <li>Built real-time streaming pipelines ingesting data into BigQuery from Pub/Sub using <strong>Apache Beam (Dataflow)</strong>.</li>
-            <li>Designed a media delivery service that reduced payload sizes and accelerated dashboard response times.</li>
-            <li>Managed GCP infrastructure, warehouse cost and query performance, and multi-instance <strong>Looker</strong> deployments.</li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Built real-time streaming pipelines ingesting data into BigQuery from Pub/Sub using <strong>Apache Beam (Dataflow)</strong>.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Designed a media delivery service that reduced payload sizes and accelerated dashboard response times.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Managed GCP infrastructure, warehouse cost and query performance, and multi-instance <strong>Looker</strong> deployments.</span>
+            </li>
           </ul>
         </article>
 
         <!-- Equity Bank -->
         <article class="job-entry">
           <div class="job-header">
-            <div>
-              <span class="job-title">Group Analytics Manager</span>
-              <span>—</span>
+            <div class="job-title-row">
               <span class="job-company">Equity Bank</span>
+              <span class="job-sep">//</span>
+              <span class="job-role">Group Analytics Manager</span>
             </div>
             <div class="job-meta">July 2021 – June 2022</div>
           </div>
-          <div class="job-submeta">Nairobi, Kenya</div>
+          <div class="job-submeta">Nairobi, Kenya (On-site)</div>
           <ul class="job-bullets">
-            <li>Built automated audit analytics pipelines across financial, process, and IT domains to elevate risk assessment.</li>
-            <li>Led technical audit reviews of machine learning credit scoring models and parsed ledger data to isolate transaction anomalies.</li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Built automated audit analytics pipelines across financial, process, and IT domains to elevate risk assessment.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Led technical audit reviews of machine learning credit scoring models and parsed ledger data to isolate transaction anomalies.</span>
+            </li>
           </ul>
         </article>
 
         <!-- Deloitte -->
         <article class="job-entry">
           <div class="job-header">
-            <div>
-              <span class="job-title">Senior Associate — Audit Analytics</span>
-              <span>—</span>
+            <div class="job-title-row">
               <span class="job-company">Deloitte</span>
+              <span class="job-sep">//</span>
+              <span class="job-role">Senior Associate — Audit Analytics</span>
             </div>
             <div class="job-meta">March 2019 – June 2021</div>
           </div>
-          <div class="job-submeta">Nairobi, Kenya</div>
+          <div class="job-submeta">Nairobi, Kenya (On-site)</div>
           <ul class="job-bullets">
-            <li>Led revenue assurance engagements across banking, telecommunication, aviation, and fintech sectors.</li>
-            <li>Applied clustering and outlier detection techniques to identify anomalous and high-risk financial transactions.</li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Led revenue assurance engagements across banking, telecommunication, aviation, and fintech sectors.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Applied clustering and outlier detection techniques to identify anomalous and high-risk financial transactions.</span>
+            </li>
           </ul>
         </article>
 
         <!-- KPMG East Africa -->
         <article class="job-entry">
           <div class="job-header">
-            <div>
-              <span class="job-title">Data Analytics Associate</span>
-              <span>—</span>
+            <div class="job-title-row">
               <span class="job-company">KPMG East Africa</span>
+              <span class="job-sep">//</span>
+              <span class="job-role">Data Analytics Associate</span>
             </div>
             <div class="job-meta">September 2016 – February 2019</div>
           </div>
-          <div class="job-submeta">Nairobi, Kenya</div>
+          <div class="job-submeta">Nairobi, Kenya (On-site)</div>
           <ul class="job-bullets">
-            <li>Developed predictive credit risk models for commercial banks using statistical machine learning.</li>
-            <li>Built automated monitoring scripts and management dashboards, streamlining debtor tracking and improving cash collections.</li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Developed predictive credit risk models for commercial banks using statistical machine learning.</span>
+            </li>
+            <li>
+              <span class="tick">[+]</span>
+              <span>Built automated monitoring scripts and management dashboards, streamlining debtor tracking and improving cash collections.</span>
+            </li>
           </ul>
         </article>
       </div>
@@ -180,161 +237,197 @@
 
     <!-- Skills -->
     <section class="section" id="skills">
-      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-head">
+        <span class="prefix">/*</span>
+        <span>02. technical_skills</span>
+        <span class="line"></span>
+        <span class="prefix">*/</span>
+      </div>
 
-      <div class="skills-list">
-        <div class="skill-category">
-          <div class="skill-cat-title">Data Architecture &amp; Modeling</div>
-          <div class="skill-cat-items">Enterprise Data Modeling, Data Warehouse Design, Federated Data Architecture, Medallion Architecture, Dimensional Data Modeling, Open Table Format, Data Vault 2.0</div>
+      <div class="skills-box">
+        <div class="skill-row">
+          <div class="skill-key">&gt; architecture:</div>
+          <div class="skill-val">Enterprise Data Modeling, Data Warehouse Design, Federated Data Architecture, Medallion Architecture, Dimensional Data Modeling, Open Table Format, Data Vault 2.0</div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-title">Data Engineering &amp; ETL</div>
-          <div class="skill-cat-items">dbt, Apache Airflow, Fivetran, Apache Spark, Apache Beam (Dataflow), Reverse ETL, Streaming &amp; Batch Pipelines</div>
+        <div class="skill-row">
+          <div class="skill-key">&gt; engineering_etl:</div>
+          <div class="skill-val">dbt, Apache Airflow, Fivetran, Apache Spark, Apache Beam (Dataflow), Reverse ETL, Streaming &amp; Batch Pipelines</div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-title">Cloud &amp; Infrastructure</div>
-          <div class="skill-cat-items">Google Cloud Platform (GCP), BigQuery, Terraform, Docker, GitLab CI, AWS Redshift</div>
+        <div class="skill-row">
+          <div class="skill-key">&gt; cloud_infra:</div>
+          <div class="skill-val">Google Cloud Platform (GCP), BigQuery, Terraform, Docker, GitLab CI, AWS Redshift</div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-title">Analytics &amp; BI</div>
-          <div class="skill-cat-items">Looker, Tableau, Power BI, dbt Semantic Layer, Hex, Mixpanel</div>
+        <div class="skill-row">
+          <div class="skill-key">&gt; bi_analytics:</div>
+          <div class="skill-val">Looker, Tableau, Power BI, dbt Semantic Layer, Hex, Mixpanel</div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-title">Languages</div>
-          <div class="skill-cat-items">Python, SQL (Advanced), Salesforce Bulk API</div>
+        <div class="skill-row">
+          <div class="skill-key">&gt; languages:</div>
+          <div class="skill-val">Python, SQL (Advanced), Salesforce Bulk API, Bash</div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-title">Leadership &amp; Strategy</div>
-          <div class="skill-cat-items">Stakeholder Management, Team Leadership, Cross-functional Collaboration, Project Leadership, Data Strategy, Mentoring</div>
+        <div class="skill-row">
+          <div class="skill-key">&gt; leadership:</div>
+          <div class="skill-val">Stakeholder Management, Team Leadership, Cross-functional Collaboration, Project Leadership, Data Strategy, Mentoring</div>
         </div>
       </div>
     </section>
 
     <!-- Education -->
     <section class="section" id="education">
-      <h2 class="section-title">Education</h2>
+      <div class="section-head">
+        <span class="prefix">/*</span>
+        <span>03. education</span>
+        <span class="line"></span>
+        <span class="prefix">*/</span>
+      </div>
 
-      <div class="item-grid">
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">MSc. Big Data Analytics</span>
-            <span class="info-subtitle">University of Liverpool</span>
+      <div class="item-list">
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">MSc. Big Data Analytics</span>
+            <span class="item-sub">University of Liverpool</span>
           </div>
-          <div class="info-date">May 2024 – Present</div>
+          <div class="item-date">May 2024 – Present</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">BSc. Financial Engineering</span>
-            <span class="info-subtitle">Jomo Kenyatta University of Agriculture and Technology (JKUAT), Kenya</span>
-            <span style="font-size: 0.85rem; color: var(--text-muted);">Statistics, Computational Finance, Math, Investments</span>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">BSc. Financial Engineering</span>
+            <span class="item-sub">Jomo Kenyatta University of Agriculture and Technology (JKUAT), Kenya</span>
+            <span style="font-size: 11.5px; color: var(--muted); margin-top: 2px;">Statistics, Computational Finance, Math, Investments</span>
           </div>
-          <div class="info-date">September 2012 – November 2016</div>
+          <div class="item-date">September 2012 – November 2016</div>
         </div>
       </div>
     </section>
 
     <!-- Certifications -->
     <section class="section" id="certifications">
-      <h2 class="section-title">Certifications</h2>
+      <div class="section-head">
+        <span class="prefix">/*</span>
+        <span>04. certifications</span>
+        <span class="line"></span>
+        <span class="prefix">*/</span>
+      </div>
 
-      <div class="item-grid">
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">
-              <a href="https://www.credly.com/badges/1b2bef1e-221f-447a-9fbd-baa08c8d7421/public_url" target="_blank" rel="noopener noreferrer">KCNA: Kubernetes and Cloud Native Associate ↗</a>
+      <div class="item-list">
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">
+              <a href="https://www.credly.com/badges/1b2bef1e-221f-447a-9fbd-baa08c8d7421/public_url" target="_blank" rel="noopener noreferrer">KCNA: Kubernetes and Cloud Native Associate</a>
+              <span class="badge-verify">[verified ↗]</span>
             </span>
-            <span class="info-subtitle">Linux Foundation</span>
+            <span class="item-sub">Linux Foundation</span>
           </div>
-          <div class="info-date">August 2026</div>
+          <div class="item-date">August 2026</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">
-              <a href="https://www.credly.com/badges/16b5724f-a235-42aa-b6dc-e117cd169187/public_url" target="_blank" rel="noopener noreferrer">Professional Data Engineer ↗</a>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">
+              <a href="https://www.credly.com/badges/16b5724f-a235-42aa-b6dc-e117cd169187/public_url" target="_blank" rel="noopener noreferrer">Professional Data Engineer</a>
+              <span class="badge-verify">[verified ↗]</span>
             </span>
-            <span class="info-subtitle">Google Cloud</span>
+            <span class="item-sub">Google Cloud</span>
           </div>
-          <div class="info-date">June 2023</div>
+          <div class="item-date">June 2023</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">
-              <a href="https://www.credly.com/badges/796efefc-3960-4f56-9ae3-7cb6a4c7800e/public_url" target="_blank" rel="noopener noreferrer">Associate Cloud Engineer ↗</a>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">
+              <a href="https://www.credly.com/badges/796efefc-3960-4f56-9ae3-7cb6a4c7800e/public_url" target="_blank" rel="noopener noreferrer">Associate Cloud Engineer</a>
+              <span class="badge-verify">[verified ↗]</span>
             </span>
-            <span class="info-subtitle">Google Cloud</span>
+            <span class="item-sub">Google Cloud</span>
           </div>
-          <div class="info-date">September 2023</div>
+          <div class="item-date">September 2023</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">dbt Fundamentals</span>
-            <span class="info-subtitle">dbt Labs</span>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">dbt Fundamentals</span>
+            <span class="badge-verify">[verified]</span>
+            <span class="item-sub">dbt Labs</span>
           </div>
-          <div class="info-date">July 2024</div>
+          <div class="item-date">July 2024</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">
-              <a href="https://coursera.org/share/97be259e73457c5cddc0c88fbd8fcdab" target="_blank" rel="noopener noreferrer">Creating Business Value with Data and Looker Specialization ↗</a>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">
+              <a href="https://coursera.org/share/97be259e73457c5cddc0c88fbd8fcdab" target="_blank" rel="noopener noreferrer">Creating Business Value with Data and Looker Specialization</a>
+              <span class="badge-verify">[verified ↗]</span>
             </span>
-            <span class="info-subtitle">Google / Coursera</span>
+            <span class="item-sub">Google / Coursera</span>
           </div>
-          <div class="info-date">January 2022</div>
+          <div class="item-date">January 2022</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">Data Engineer Nano-Degree</span>
-            <span class="info-subtitle">Udacity</span>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">Data Engineer Nano-Degree</span>
+            <span class="badge-verify">[verified]</span>
+            <span class="item-sub">Udacity</span>
           </div>
-          <div class="info-date">August 2020</div>
+          <div class="item-date">August 2020</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">CFA Level 1 – Passed</span>
-            <span class="info-subtitle">CFA Institute</span>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">CFA Level 1 – Passed</span>
+            <span class="item-sub">CFA Institute</span>
           </div>
-          <div class="info-date">August 2016</div>
+          <div class="item-date">August 2016</div>
         </div>
 
-        <div class="info-item">
-          <div class="info-main">
-            <span class="info-title">Certified Public Accountant (CPA) – Finalist</span>
-            <span class="info-subtitle">Institute of Certified Public Accountants – Kenya</span>
+        <div class="item-card">
+          <div class="item-main">
+            <span class="item-title">Certified Public Accountant (CPA) – Finalist</span>
+            <span class="item-sub">Institute of Certified Public Accountants – Kenya</span>
           </div>
-          <div class="info-date">August 2015</div>
+          <div class="item-date">August 2015</div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
     <section class="section" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <p style="color: var(--text-secondary); margin-bottom: 16px;">
-        Reach out directly via email or connect on GitHub.
+      <div class="section-head">
+        <span class="prefix">/*</span>
+        <span>05. connect</span>
+        <span class="line"></span>
+        <span class="prefix">*/</span>
+      </div>
+
+      <p style="color: var(--text); margin-bottom: 16px; font-size: 13px;">
+        Reach out directly via email, read my technical writing on Medium, or follow my projects on GitHub:
       </p>
+
       <div class="contact-links">
-        <a href="mailto:dennis.mutia@gmail.com" class="contact-pill">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <a href="mailto:dennis.mutia@gmail.com" class="btn btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
           <span>dennis.mutia@gmail.com</span>
         </a>
 
-        <a href="https://github.com/dennismutia" target="_blank" rel="noopener noreferrer" class="contact-pill">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+        <!-- Medium next to email -->
+        <a href="https://medium.com/@dennis.mutia" target="_blank" rel="noopener noreferrer" class="btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+          </svg>
+          <span>medium.com/@dennis.mutia</span>
+        </a>
+
+        <a href="https://github.com/dennismutia" target="_blank" rel="noopener noreferrer" class="btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
           </svg>
           <span>github.com/dennismutia</span>
@@ -343,12 +436,15 @@
     </section>
   </main>
 
-  <footer class="container site-footer">
-    <div>&copy; 2026 Dennis Mutia</div>
-    <div class="footer-nav">
-      <a href="#about">Back to top ↑</a>
-      <a href="https://github.com/dennismutia" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="mailto:dennis.mutia@gmail.com">Email</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Dennis Mutia // built with html &amp; css</div>
+      <div class="footer-links">
+        <a href="#about">top ↑</a>
+        <a href="mailto:dennis.mutia@gmail.com">email</a>
+        <a href="https://medium.com/@dennis.mutia" target="_blank" rel="noopener noreferrer">medium</a>
+        <a href="https://github.com/dennismutia" target="_blank" rel="noopener noreferrer">github</a>
+      </div>
     </div>
   </footer>
 
