@@ -26,7 +26,7 @@ Results-driven data professional with close to 10 years of experience in data pl
 ## Experience
 
 ### **Business Intelligence Developer** | Greenpeace International — Netherlands (Remote)
-*July 2024 – Present*
+*July 2024 – September 2026*
 - Developing, reviewing, and refining of data strategies to align with organizational goals.
 - Managing data platform infrastructure using Terraform and GitLab CI to ensure reliability and repeatability.
 - Leading federated enterprise data modeling across 26 independent country offices, enabling consistent centralized reporting while preserving local flexibility.
