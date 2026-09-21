@@ -30,16 +30,16 @@ Experienced data professional with close to 10 years of experience in data platf
 
 ### **Business Intelligence Developer** | Greenpeace International — Netherlands (Remote)
 *July 2024 – September 2026*
-- Led federated enterprise data modeling across global offices, standardizing metrics via the **dbt semantic layer**.
-- Built scalable **BigQuery** pipelines (Apache Spark, Fivetran, Python) ingesting CRM, product, and ad data from Salesforce, HubSpot, Mixpanel, and Meta.
+- Led federated enterprise data modeling across global offices, standardizing metrics via the dbt semantic layer.
+- Built scalable BigQuery pipelines (Apache Spark, Fivetran, Python) ingesting CRM, product, and ad data from Salesforce, HubSpot, Mixpanel, and Meta.
 - Architected an in-house Salesforce Reverse ETL solution and refactored Redshift queries, reducing ingestion and platform costs.
-- Managed platform infrastructure with **Terraform** and **GitLab CI**; delivered stakeholder BI dashboards in Looker, Tableau, and Hex.
+- Managed platform infrastructure with Terraform and GitLab CI; delivered stakeholder BI dashboards in Looker, Tableau, and Hex.
 
 ### **Senior Data Engineer – Data Platform** | Premise Data — US (Remote)
 *June 2022 – June 2024*
-- Built real-time streaming pipelines ingesting data into BigQuery from Pub/Sub using **Apache Beam (Dataflow)**.
+- Built real-time streaming pipelines ingesting data into BigQuery from Pub/Sub using Apache Beam (Dataflow).
 - Designed a media delivery service that reduced payload sizes and accelerated dashboard response times.
-- Managed GCP infrastructure, warehouse cost and query performance, and multi-instance **Looker** deployments.
+- Managed GCP infrastructure, warehouse cost and query performance, and multi-instance Looker deployments.
 
 ### **Group Analytics Manager** | Equity Bank — Nairobi, Kenya
 *July 2021 – June 2022*

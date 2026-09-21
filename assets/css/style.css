@@ -462,16 +462,13 @@ a:hover {
   line-height: 1.6;
 }
 
+.job-bullets li .bullet,
 .job-bullets li .tick {
   color: var(--accent);
-  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.65;
   flex-shrink: 0;
-  line-height: 1.6;
-}
-
-.job-bullets li strong {
-  color: var(--headers);
-  font-weight: 600;
+  user-select: none;
 }
 
 /* Skills Terminal Box */
