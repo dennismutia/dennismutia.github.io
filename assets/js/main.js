@@ -41,13 +41,4 @@
       applyTheme(e.matches ? 'dark' : 'light');
     }
   });
-
-  // Print button
-  const printButtons = document.querySelectorAll('.action-print-cv');
-  printButtons.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.print();
-    });
-  });
 })();
