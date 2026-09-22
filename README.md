@@ -5,7 +5,6 @@
 [![Website](https://img.shields.io/badge/Website-dennismutia.github.io-blue?style=flat&logo=googlechrome&logoColor=white)](https://dennismutia.github.io/)
 [![Email](https://img.shields.io/badge/Email-dennis.mutia%40gmail.com-red?style=flat&logo=gmail&logoColor=white)](mailto:dennis.mutia@gmail.com)
 [![Medium](https://img.shields.io/badge/Medium-%40dennis.mutia-000000?style=flat&logo=medium&logoColor=white)](https://medium.com/@dennis.mutia)
-[![GitHub](https://img.shields.io/badge/GitHub-dennismutia-181717?style=flat&logo=github&logoColor=white)](https://github.com/dennismutia)
 [![GCP Certified](https://img.shields.io/badge/GCP-Professional_Data_Engineer-4285F4?style=flat&logo=googlecloud&logoColor=white)](https://www.credly.com/badges/16b5724f-a235-42aa-b6dc-e117cd169187/public_url)
 [![KCNA](https://img.shields.io/badge/Linux_Foundation-KCNA-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://www.credly.com/badges/1b2bef1e-221f-447a-9fbd-baa08c8d7421/public_url)
 
@@ -83,5 +82,4 @@ Experienced data professional with close to 10 years of experience in data platf
 
 - **Email**: [dennis.mutia@gmail.com](mailto:dennis.mutia@gmail.com)
 - **Medium**: [medium.com/@dennis.mutia](https://medium.com/@dennis.mutia)
-- **GitHub**: [github.com/dennismutia](https://github.com/dennismutia)
 - **Website**: [https://dennismutia.github.io/](https://dennismutia.github.io/)
