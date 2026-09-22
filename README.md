@@ -14,11 +14,9 @@ Experienced data professional with close to 10 years of experience in data platf
 
 ---
 
-## Technical Skills
+## Skills
 
-- **Leadership & Strategy**: Stakeholder Management, Team Leadership, Cross-functional collaboration, Project Leadership, Data Strategy
 - **Data Architecture & Modeling**: Enterprise Data Modeling, Data Warehouse Design, Federated Data Architecture, Medallion Architecture, Dimensional Data Modeling, Open Table Format, Data Vault 2.0
-- **Languages**: Python, SQL
 - **Data Engineering / ETL**: dbt, Apache Airflow, Fivetran, Apache Spark, Apache Beam (Dataflow), Reverse ETL
 - **Cloud and Infrastructure**: Google Cloud Platform (GCP), BigQuery, Terraform, Docker, GitLab CI, AWS Redshift
 - **Analytics and Business Intelligence**: Looker, Tableau, Power BI, dbt semantic layer, Hex, Mixpanel
